@@ -204,9 +204,11 @@ body {
 /* here is the section containing my About me */
 /* here is the section containing my About me */
 .hero {
+
     text-align: center;
     padding: 100px 20px;
     margin-top: 60px;
+    
 }
 
 /* here is my profiles picture */
@@ -217,7 +219,30 @@ body {
     height: 300px;
     border-radius: 50%;
     margin-bottom: 20px;
-  
+    
+}
+
+/* this is turning chrisban in to different colors */
+.name {
+font-size: 2rem;
+}
+
+.chris {
+    color: red;
+}
+
+.ban {
+    color: blue;
+}
+
+
+/* this is the paragraph about myself */
+/* this is the paragraph about myself */
+.aboutme {
+   text-align: justify;
+    margin-left: 5%;
+    margin-right: 5%;
+
 }
 
 /* here are the btns leading to the "View port, About and Contact" page */

@@ -120,8 +120,25 @@ body {
 /* here is the transform */
 .btn:hover {
     cursor: pointer;
-    color: white;
-    background-color: #112240;
+    color: #ffffff;
+    background-color: #01003f;
+}
+
+/* here is my address */
+/* here is my address */
+.adr {
+  color: #64FFDA;
+}
+
+/* this is my number */
+/* this is my number */
+.numb{
+  color: #01003f;
+  background-color: #64FFDA;
+  padding: 1%;
+  height: fit-content;
+  border-radius: 5px;
+  text-decoration: none;
 }
 
 

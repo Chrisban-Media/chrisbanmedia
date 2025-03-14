@@ -11,15 +11,9 @@
 //     nav.classList.toggle("show");
 //   });
 // });
-console.log("Hello World");
 
-const offScreenMenu = document.getElementById("hamMenu");
-const hamMenu = document.getElementById("hamburger");
+const menu = document.getElementById("menu");
 
-function openMenu() {
-  offScreenMenu.classList.toggle("open-menu");
-}
-
-function closeMenu() {
-  offScreenMenu.classList.remove("open-menu");
+function toggleMenu() {
+  menu.classList.toggle("active");
 }

@@ -1,423 +1,190 @@
-/* styles.css
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #0A192F;
-    color: white;
+  font-family: "Poppins", sans-serif;
+  background-color: #0a192f;
+  color: white;
 }
 
+/* =========== here is the header ======== */
+header {
+  background: #112240;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/*===========  here is the div container in my header ========== */
 .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  overflow: hidden;
 }
 
-.header {
-    background: #112240;
-    padding: 10px 0;
+/* =============== here is the written logo ============ */
+.brand-name {
+  font-size: 24px;
+  font-weight: 600;
+  display: none;
 }
 
-.logo {
-    font-size: 24px;
-    font-weight: 600;
+nav {
+  display: none;
 }
 
-.nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+nav.active {
+  display: grid;
+  gap: 2rem;
+  position: absolute;
+  top: 8rem;
+  padding: 1rem;
+  right: 0;
+  width: 50%;
+  background-color: #0a192f;
+  border-radius: 1rem;
 }
 
-.nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: 400;
+nav a {
+  color: #fff;
+  text-decoration: none;
 }
 
-.hero {
-    text-align: center;
-    padding: 50px 20px;
+nav a:hover {
+  cursor: pointer;
+  transition: all;
+  transform: scale(0.02);
 }
 
-.profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-bottom: 20px;
-}
-
-.btn {
-    display: inline-block;
-    background: #64FFDA;
-    color: #0A192F;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    margin-top: 20px;
-}
-
-.projects {
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
-}
-
-.project-card {
-    background: #112240;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.project-card img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.footer {
-    text-align: center;
-    padding: 20px;
-    background: #112240;
-}
-
-.social-links a {
-    color: white;
-    font-size: 20px;
-    margin: 0 10px;
-}
-
-/* Responsive Design */
-/* @media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .nav ul {
-        flex-direction: column;
-        padding: 0;
-    }
-
-    .project-grid {
-        grid-template-columns: 1fr;
-    }
-} */
-
-/* script.js */
- /* document.addEventListener("DOMContentLoaded", function () {
-    console.log("Portfolio website loaded successfully");
-
-    const nav = document.querySelector(".nav ul");
-    const toggleButton = document.createElement("button");
-    toggleButton.innerText = "☰";
-    toggleButton.classList.add("nav-toggle");
-    document.querySelector(".header").appendChild(toggleButton);
-    
-    toggleButton.addEventListener("click", () => {
-        nav.classList.toggle("show");
-    });
-}); */ 
-
-
-/* styles.css */
-body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #0A192F;
-    color: white;
-    scroll-behavior: smooth;
-    margin-bottom: yyyy0%;
-}
-
-
-/* here is the div container in my header */
-/* here is the div container in my header */
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
-
-/* here is the header */
-/* here is the header */
-.header {
-    background: #112240;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-}
-
-/* this is my logo picture in my header */
-/* this is my logo picture in my header */
-.logos {
-    margin-top: 2%;
-    margin-bottom: -3%;
-    /* display: flex; */
-    /* padding: 80px; */
-    /* background-color: blue; */
-
-}
-
-@media (min-width: 768px) and (max-width: 1440px){
-    #hamburger {
-        display: none;
-    }
-}
-
-/* here is the written logo */
-/* here is the written logo */
-.logo {
-    font-size: 24px;
-    font-weight: 600;
-    gap: 2rem;
-}
-
-/* this is the navigation */
-/* this is the navigation */
-.nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-.nav a {
-    background-color: #64FFDA;
-    border-radius: 3px;
-    padding: 8%;
-    color: #0A192F;
-    text-decoration: none;
-    font-weight: 400;
-}
-
-.nav a:hover {
-    cursor: pointer;
-    color: #64FFDA;
-    background-color: #0A192F;
-    transition: all;
-    transform: scale(0.02);
-}
- 
-/* here is the menu icon */
-/* here is the menu icon */
-.off-screen-menu {
-background-image: radial-gradient(#0A192F);
-    height: 23vh;
-    border-radius: 2px;
-    width: 50%;
-    padding-right: 35px;
-    margin-top: 5%;
-    /* visibility: hidden; */
-    display: none;
-}
-
-#hamburger {
-    scale: 1.5;
-    margin-right: -95%;
-    margin-top: -8.7%;
-    margin-bottom: 0%;
-    /* background-color: red; */
-}
-
-#hamburger:active {
-    color: #000;
-    padding-left: 5px;
-    padding-right: 5px;
-    background-color: #64FFDA;
-}
-
-#hamburger a {
-    text-decoration: none;
-    color: white;
-}
-
-.open-menu {
+/* =========== tablet and desktops screens ========= */
+@media screen and (min-width: 600px) {
+  .brand-name {
     display: block;
-}
+  }
 
-.off-screen-menu ul {
-    display: grid;
-    gap: 0.90rem;
-}
+  #hamburger {
+    display: none;
+  }
 
-.off-screen-menu ul li {
-    list-style: none;
+  /* this is the navigation */
+  nav {
+    display: flex;
+    gap: 20px;
+    position: static;
+  }
 }
-
-.off-screen-menu ul li a {
-    text-decoration: none;
-    
-    color: #0A192F;
-    background-color: #64FFDA;
-    border-radius: 3px;
-    padding: 5px;
-    box-shadow: 0 0 15px black;
-}
-
 
 /* here is the section containing my About me */
 /* here is the section containing my About me */
 .hero {
-
-    text-align: center;
-    padding: 100px 20px;
-    margin-top: 60px;
-    
+  text-align: center;
+  padding: 100px 20px;
+  margin-top: 60px;
 }
 
 /* here is my profiles picture */
 /* here is my profiles picture */
 .profile-pic {
-    margin-top: 10%;
-    width: 250px;
-    height: 300px;
-    border-radius: 50%;
-    margin-bottom: 20px;
-    
+  margin-top: 10%;
+  width: 250px;
+  height: 300px;
+  border-radius: 50%;
+  margin-bottom: 20px;
 }
 
 /* this is turning chrisban in to different colors */
 .name {
-font-size: 2rem;
+  font-size: 2rem;
 }
 
 .chris {
-    color: red;
+  color: red;
 }
 
 .ban {
-    color: blue;
+  color: blue;
 }
-
 
 /* this is the paragraph about myself */
 /* this is the paragraph about myself */
 .aboutme {
-   text-align: justify;
-    margin-left: 5%;
-    margin-right: 5%;
-
+  text-align: justify;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 /* here are the btns leading to the "View port, About and Contact" page */
 .btn {
-    display: inline-block;
-    background: #64FFDA;
-    color: #0A192F;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    margin-top: 20px;
-    gap: 5rem;
-    margin-bottom: 10%;
+  display: inline-block;
+  background: #64ffda;
+  color: #0a192f;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 20px;
+  gap: 5rem;
+  margin-bottom: 10%;
 }
 
 /* here is the transform */
 .btn:hover {
-    cursor: pointer;
-    color: white;
-    background-color: #112240;
+  cursor: pointer;
+  color: white;
+  background-color: #112240;
 }
 
-
-.projects, .about, .contact {
-    padding: 100px 20px;
-    text-align: center;
+.projects,
+.about,
+.contact {
+  padding: 100px 20px;
+  text-align: center;
 }
-
-
-
 
 .about p {
-    max-width: 800px;
-    margin: 0 auto;
-    font-size: 18px;
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 18px;
 }
 
 .contact form {
-    max-width: 500px;
-    margin: 0 auto;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
-.contact input, .contact textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
-    border: none;
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: none;
 }
 
 .contact button {
-    background: #64FFDA;
-    color: #0A192F;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  background: #64ffda;
+  color: #0a192f;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .footer {
-    
-    text-align: center;
-    padding: 20px;
-    background: #112240;
-
-    
+  text-align: center;
+  padding: 20px;
+  background: #112240;
 }
 
 .social-links a {
-    color: white;
-    font-size: 20px;
-    margin: 0 10px;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  margin: 0 10px;
 }
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .nav ul {
-        flex-direction: column;
-        padding: 0;
-        display: none;
-    }
-
-    .nav.show ul {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .project-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* script.js */
-document.addEventListener("DOMContentLoaded", function () {
-    console.log("Portfolio website loaded successfully");
-
-    const nav = document.querySelector(".nav ul");
-    const toggleButton = document.createElement("button");
-    toggleButton.innerText = "☰";
-    toggleButton.classList.add("nav-toggle");
-    document.querySelector(".header").appendChild(toggleButton);
-    
-    toggleButton.addEventListener("click", () => {
-        nav.classList.toggle("show");
-    });
-});

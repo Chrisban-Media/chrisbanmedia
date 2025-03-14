@@ -12,3 +12,14 @@
 //   });
 // });
 console.log("Hello World");
+
+const offScreenMenu = document.getElementById("hamMenu");
+const hamMenu = document.getElementById("hamburger");
+
+function openMenu() {
+  offScreenMenu.classList.toggle("open-menu");
+}
+
+function closeMenu() {
+  offScreenMenu.classList.remove("open-menu");
+}

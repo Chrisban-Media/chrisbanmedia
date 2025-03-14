@@ -135,6 +135,7 @@ body {
     background-color: #0A192F;
     color: white;
     scroll-behavior: smooth;
+    margin-bottom: yyyy0%;
 }
 
 
@@ -162,10 +163,18 @@ body {
 /* this is my logo picture in my header */
 /* this is my logo picture in my header */
 .logos {
-    margin-top: 1%;
-    margin-bottom: 1%;
+    margin-top: 2%;
+    margin-bottom: -3%;
     /* display: flex; */
+    /* padding: 80px; */
+    /* background-color: blue; */
 
+}
+
+@media (min-width: 768px) and (max-width: 1440px){
+    #hamburger {
+        display: none;
+    }
 }
 
 /* here is the written logo */
@@ -200,6 +209,63 @@ body {
     transition: all;
     transform: scale(0.02);
 }
+ 
+/* here is the menu icon */
+/* here is the menu icon */
+.off-screen-menu {
+background-image: radial-gradient(#0A192F);
+    height: 23vh;
+    border-radius: 2px;
+    width: 50%;
+    padding-right: 35px;
+    margin-top: 5%;
+    /* visibility: hidden; */
+    display: none;
+}
+
+#hamburger {
+    scale: 1.5;
+    margin-right: -95%;
+    margin-top: -8.7%;
+    margin-bottom: 0%;
+    /* background-color: red; */
+}
+
+#hamburger:active {
+    color: #000;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #64FFDA;
+}
+
+#hamburger a {
+    text-decoration: none;
+    color: white;
+}
+
+.open-menu {
+    display: block;
+}
+
+.off-screen-menu ul {
+    display: grid;
+    gap: 0.90rem;
+}
+
+.off-screen-menu ul li {
+    list-style: none;
+}
+
+.off-screen-menu ul li a {
+    text-decoration: none;
+    
+    color: #0A192F;
+    background-color: #64FFDA;
+    border-radius: 3px;
+    padding: 5px;
+    box-shadow: 0 0 15px black;
+}
+
 
 /* here is the section containing my About me */
 /* here is the section containing my About me */

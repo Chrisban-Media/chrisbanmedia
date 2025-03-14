@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chris | Portfolio</title>
+    <title>Chrisban-Media</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css" />
     <script defer src="script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -12,11 +13,26 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
+
+    <!-- here is the icons link -->
+    <!-- here is the icons link -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+
+    
   </head>
   <body>
     <header class="header">
       <div class="container">
-        <h1 class="logo"><strong class="chris">CHRIS</strong><strong class="ban">BAN</strong>  Portfolio</h1>
+        <h1 class="logo"><strong class="chris">CHRIS</strong><strong class="ban">BAN</strong>  MEDIA</h1>
+
+<!-- Ham menu -->
+<div id="hamburger">
+  <i onclick="openMenu()" class="ri-menu-3-line"></i>
+</div>
+
         <img
           class="logos"
           src="images/logo.png"
@@ -24,9 +40,20 @@
           width="50"
           height="50"
         />
+        
+<div class="off-screen-menu" id="hamMenu">
+  <ul>
+    <li onclick="closeMenu()"><a href="about.html">About</a></li>
+    <li onclick="closeMenu()"><a href="project.html">Projects</a></li>
+    <li onclick="closeMenu()"><a href="contact.html">Contact</a></li>
+  </ul>
+</div>
+
+
+
         <nav class="nav">
           <ul>
-            <li><a href="#about">About </a></li>
+            <li><a href="about.html">About</a></li>
             <li><a href="project.html">Projects</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
@@ -34,37 +61,47 @@
       </div>
     </header>
 
-    <section class="hero">
-      <div class="hero-content">
-        <img
-          src="images/chrispics.png"
-          alt="Chris' Photo"
-          class="profile-pic"
-        />
-        <h2 class="name"><strong class="chris">CHRIS</strong><strong class="ban">BAN</strong> <br>Graphic Designer & Frontend Developer</h2>
-        <p class="aboutme"> <wbr>
-          Crafting visually stunning designs and building interactive web
-          experiences. Combinining without Bridging the gap between art and
-          technology. I am a creative developer with a strong passion for
-          <strong>Web Development</strong> and <strong>Graphic</strong>. 
-        </wbr>
-        </p>
-        <p class="aboutme"><wbr>With a
-          background in art and a deep interest in computer science, I bring a
-          unique perspective to coding—combining aesthetics with functionality.</wbr></p>
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <img
+            src="images/chrispics.png"
+            alt="Chris' Photo"
+            class="profile-pic"
+          />
+          <h2 class="name"><strong class="chris">CHRIS</strong><strong class="ban">BAN</strong></h2>
+          <h3>(Ihuoma Christopher)</h3>
+          <h2>Graphic Designer & Frontend Developer</h2>
+          
+          <p class="aboutme"> <wbr>
+            Crafting visually stunning designs and building interactive web
+            experiences. Combinining without Bridging the gap between art and
+            technology. I am a creative developer with a strong passion for
+            <strong>Web Development</strong> and <strong>Graphics</strong>. 
+          </wbr>
+          </p>
+          <p class="aboutme"><wbr>With a
+            background in art and a deep interest in computer science, I bring a
+            unique perspective to coding—combining aesthetics with functionality.</wbr></p>
+  
+          <a href="project.html" class="btn">My Projects</a>
+          <a href="#about" class="btn">About Me</a>
+          <a href="contact.html" class="btn">Contact</a>
+        </div>
+      </section>
+    </main>
 
-        <a href="project.html" class="btn">View Portfolio</a>
-        <a href="#about" class="btn">About Me</a>
-        <a href="contact.html" class="btn">Contact</a>
-      </div>
-    
     <footer class="footer">
       <p>Connect with me</p>
       <div class="social-links">
-        <a href="#"><i class="fab fa-github"></i></a>
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fas fa-envelope"></i></a>
+        <a href="#"><i class="ri-facebook-fill"></i></a>
+        <a href="https://wa.me/2348145626046 "><i class="ri-whatsapp-fill"></i></a>
+        <a href="https://github.com/Chrisban-Media"><i class="ri-github-fill"></i>></a>
+        <a href="#"><i class="ri-instagram-fill"></i>></a>
+        
       </div>
     </footer>
+
+    <script src="/script.js"></script>
   </body>
 </html>

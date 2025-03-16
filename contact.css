@@ -1,24 +1,15 @@
-body {
-  font-family: "Poppins", sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #0a192f;
-  color: white;
+html {
   scroll-behavior: smooth;
 }
 
-/* here is the div container in my header */
-/* here is the div container in my header */
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #0a192f;
+  color: white;
 }
 
-/* here is the header */
-/* here is the header */
-.header {
+/* =========== here is the header ======== */
+header {
   background: #112240;
   padding: 10px 0;
   position: fixed;
@@ -28,166 +19,177 @@ body {
   z-index: 1000;
 }
 
-/* this is my logo picture in my header */
-/* this is my logo picture in my header */
-.logos {
-  margin-top: 1%;
-  margin-bottom: 1%;
-  /* display: flex; */
+/*===========  here is the div container in my header ========== */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  overflow: hidden;
 }
 
-
-/* here is the written logo */
-/* here is the written logo */
-.logo {
+/* =============== here is the written logo ============ */
+.brand-name {
   font-size: 24px;
   font-weight: 600;
+  display: none;
+}
+
+nav {
+  display: none;
+}
+
+nav.active {
+  display: grid;
   gap: 2rem;
-}
-
-/* this is the navigation */
-/* this is the navigation */
-.nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-.nav a {
-  background-color: #64ffda;
-  border-radius: 3px;
-  padding: 8%;
-  color: #0a192f;
-  text-decoration: none;
-  font-weight: 400;
-}
-
-.nav a:hover {
-  cursor: pointer;
-  color: #64ffda;
+  position: absolute;
+  top: 8rem;
+  padding: 1rem;
+  right: 0;
+  width: 50%;
   background-color: #0a192f;
+  border-radius: 1rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  cursor: pointer;
   transition: all;
   transform: scale(0.02);
 }
 
-/* this is the section of my portfolio carriers */
-/* this is the section of my portfolio carriers */
-.projects {
-  margin-top: 30%;
+/* =========== tablet and desktops screens ========= */
+@media screen and (min-width: 600px) {
+  .brand-name {
+    display: block;
+  }
+
+  #hamburger {
+    display: none;
+  }
+
+  /* this is the navigation */
+  nav {
+    display: flex;
+    gap: 20px;
+    position: static;
+  }
+}
+
+/* ============ THE HEADER STOPPED HERE =========== */
+
+/* here is the section containing my About me */
+/* here is the section containing my About me */
+.hero {
   text-align: center;
+  padding: 100px 20px;
+  margin-top: 60px;
 }
 
-
- /* this is div carring everything in my section */
- /* this is div carring everything in my section */
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-  padding: 20px;
+/* here is my profiles picture */
+/* here is my profiles picture */
+.profile-pic {
+  margin-top: 10%;
+  width: 250px;
+  height: 300px;
+  border-radius: 50%;
+  margin-bottom: 20px;
 }
 
-/* this is the div that carries each set in the section */
-/* this is the div that carries each set in the section */
-.project-card {
-  background: #112240;
-  padding: 20px;
-  border-radius: 10px;
+/* this is turning chrisban in to different colors */
+.name {
+  font-size: 2rem;
+  color: #64ffda;
 }
 
-/* these are the images in my section */
-/* these are the images in my section */
-.project-card img {
-  width: 100%;
-  border-radius: 10px;
+/* this is the paragraph about myself */
+/* this is the paragraph about myself */
+.aboutme {
+  text-align: justify;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
-/* here is the submit button */
-/* here is the submit button */
+/* here are the btns leading to the "View port, About and Contact" page */
 .btn {
-    display: inline-block;
-    background: #64FFDA;
-    color: #0A192F;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    margin-top: 20px;
-    gap: 5rem;
-    margin-bottom: 10%;
+  display: inline-block;
+  background: #64ffda;
+  color: #0a192f;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 20px;
+  gap: 5rem;
+  margin-bottom: 10%;
 }
 
 /* here is the transform */
 .btn:hover {
-    cursor: pointer;
-    color: #ffffff;
-    background-color: #01003f;
+  cursor: pointer;
+  color: white;
+  background-color: #112240;
 }
 
-/* here is my address */
-/* here is my address */
-.adr {
-  color: #64FFDA;
+.projects,
+.about,
+.contact {
+  padding: 100px 20px;
+  text-align: center;
 }
 
-/* this is my number */
-/* this is my number */
-.numb{
-  color: #01003f;
-  background-color: #64FFDA;
+.about p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 18px;
+}
+
+.contact form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: none;
+}
+
+.contact button {
+  background: #64ffda;
+  color: #0a192f;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.tel {
+  text-decoration: none;
+  background-color: #64ffda;
+  border-radius: 3%;
+  color: #0a192f;
   padding: 1%;
   height: fit-content;
-  border-radius: 5px;
-  text-decoration: none;
+  width: fit-content;
 }
 
-
 .footer {
-    text-align: center;
-    padding: 20px;
-    background: #112240;
+  text-align: center;
+  padding: 20px;
+  background: #112240;
 }
 
 .social-links a {
-    color: white;
-    font-size: 20px;
-    margin: 0 10px;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  margin: 0 10px;
 }
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .nav ul {
-        flex-direction: column;
-        padding: 0;
-        display: none;
-    }
-
-    .nav.show ul {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .project-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* script.js */
-document.addEventListener("DOMContentLoaded", function () {
-    console.log("Portfolio website loaded successfully");
-
-    const nav = document.querySelector(".nav ul");
-    const toggleButton = document.createElement("button");
-    toggleButton.innerText = "☰";
-    toggleButton.classList.add("nav-toggle");
-    document.querySelector(".header").appendChild(toggleButton);
-    
-    toggleButton.addEventListener("click", () => {
-        nav.classList.toggle("show");
-    });
-});

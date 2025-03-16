@@ -3,78 +3,127 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Me</title>
+    <title>Chrisban-Media</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="contact.css" />
-    <script defer src
-    ="script.js"></script>
+    <script defer src="script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
+
+    <!-- here is the icons link -->
+    <!-- here is the icons link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header class="header">
+    <header>
       <div class="container">
-        <h1 class="logo">CHRISBAN Portfolio</h1>
-        <img
-          class="logos"
-          src="images/logo.png"
-          alt="logo"
-          width="50"
-          height="50"
-        />
+        <h1 class="brand-name">
+          <strong class="chris">CHRIS</strong
+          ><strong class="ban">BAN</strong> MEDIA
+        </h1>
+
+        <div class="brand-logo-box">
+          <img
+            class="brand-logo"
+            src="images/logo.png"
+            alt="logo"
+            width="50"
+            height="50"
+          />
+        </div>
+
+        <!-- Ham menu -->
+        <div id="hamburger">
+          <i onclick="toggleMenu()" class="ri-menu-3-line"></i>
+        </div>
+
         <nav id="menu">
-          <ul>
-            <li><a href="index.html">Home </a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="project.html">Projects</a></li>
-          </ul>
+          <a href="index.html">Home</a>
+          <a href="project.html">Projects</a>
         </nav>
       </div>
     </header>
 
-    <section id="projects" class="projects">
-        <h2>Let's Talk</h2>
-        <div class="project-grid">
-          <div class="project-card">
-            <label for="firstName"><b>Full Name</b></label> <br>
-            <input type="text" name="name" id="name" placeholder="enter your name" autocomplete="on" autofocus required>
-         <br><br>
-            <label for="number"><b>Phone Number</b></label> <br>
-            <input type="tel" name="tel" id="tel" placeholder="enter your phoneNumber"  autofocus required>
-            <!-- <img src="images/funeral.jpg" alt="Project 1" /> -->
-            <br><br>
-            <label for="message">Message Me:::</label>
-            <br>
-            <textarea name="message" id="message"
-            cols="30" rows="10" placeholder="message me"></textarea>
-            <br><br>
-            <button type="submit" a href="https://wa.me/2348145626046" class="btn"></a>
-           Send</a>
-          </button>
-           <br><br>
-           <h2>Location Me</h2>
-        <address class="adr">
-          No.11-12 Umuojima Road off MCC, Aba Owerri Road, Abayi, Osisioma Ngwa
-          L.G.A, Aba, Abia State, Nigeria <br /><br />
-          Call me: <a class="numb" href="tel:+2348145626046">+234 814 562 6046</a>
-        </address>
-          </div>
-         
-      </section>
-  
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <h2 class="name">Lets Talk</h2>
 
+          <form action="https://wa.me/2348145626046" method="get">
+            <fieldset>
+              <p>
+                <label for="fullname">Full Name:</label>
+                <br /><br />
+                <input
+                  type="text"
+                  name="fullname"
+                  id="fullname"
+                  placeholder="enter full name"
+                  autocomplete="on"
+                  autofocus
+                  required
+                />
+              </p>
+              <p>
+                <label for="tell">Phone Number:</label>
+                <br /><br />
+                <input
+                  type="tel"
+                  name="tel"
+                  id="tel"
+                  placeholder="enter phone number"
+                  autofocus
+                  required
+                />
+              </p>
+              <p>
+                <label for="text">Message Me:</label>
+                <br /><br />
+                <textarea
+                  name="text"
+                  id="message"
+                  cols="30"
+                  rows="10"
+                  placeholder="send me a message"
+                ></textarea>
+              </p>
+            </fieldset>
+
+            <button type="submit" a href="https://wa.me/2348145626046" class="btn">Send</a></button>
+
+            <button type="reset" a href="reset" class="btn">Reset</a></button>
+          </form>
+        </div>
+        <h2>Our Location Form</h2>
+        <address>
+          No.11-12 Umuojima Road off MCC, Aba Owerri Road, Abayi, Osisioma Ngwa
+          Local Governmenr Area, Aba, Abia State, Nigeria <br /><br />
+          Phone: <a class="tel" href="tel:+2348145626046"><b>+234 814 5626 046</b></a>
+        </address>
+      </section>
+
+     
+    </main>
 
     <footer class="footer">
-        <p>Connect with me</p>
-        <div class="social-links">
-          <a href="#"><i class="fab fa-github"></i></a>
-          <a href="#"><i class="fab fa-linkedin"></i></a>
-          <a href="#"><i class="fas fa-envelope"></i></a>
-        </div>
-      </footer>
-    </body>
-  </html>
-  
+      <p>&copy; Copyright &nbsp;&nbsp;Connect with me</p>
+      <div class="social-links">
+        <a href="#"><i class="ri-facebook-fill"></i></a>
+        <a href="https://wa.me/2348145626046 "
+          ><i class="ri-whatsapp-fill"></i
+        ></a>
+        <a href="#"><i class="ri-github-fill"></i></a>
+        <a href="#"><i class="ri-instagram-fill"></i></a>
+      </div>
+    </footer>
+
+    <script src="/script.js"></script>
+  </body>
+</html>

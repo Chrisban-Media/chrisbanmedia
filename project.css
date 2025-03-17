@@ -1,72 +1,11 @@
-body {
-  font-family: "Poppins", sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #0a192f;
-  color: white;
+html {
   scroll-behavior: smooth;
 }
 
-/* here is the div container in my header */
-/* here is the div container in my header */
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-}
-
-/* here is the header */
-/* here is the header */
-.header {
-  background: #112240;
-  padding: 10px 0;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-}
-
-/* this is my logo picture in my header */
-/* this is my logo picture in my header */
-.logos {
-  margin-top: 1%;
-  margin-bottom: 1%;
-  /* display: flex; */
-}
-
-/* here is the written logo */
-/* here is the written logo */
-.logo {
-  font-size: 24px;
-  font-weight: 600;
-  gap: 2rem;
-}
-
-/* this is the navigation */
-/* this is the navigation */
-.nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-.nav a {
-  background-color: #64ffda;
-  border-radius: 3px;
-  padding: 8%;
-  color: #0a192f;
-  text-decoration: none;
-  font-weight: 400;
-}
-
-.nav a:hover {
-  cursor: pointer;
-  color: #64ffda;
+body {
+  font-family: "Poppins", sans-serif;
   background-color: #0a192f;
-  transition: all;
-  transform: scale(0.02);
+  color: white;
 }
 
 /* this is the section of my portfolio carriers */
@@ -127,42 +66,4 @@ body {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-}
-
-/* footer */
-/* footer */
-
-.footer {
-  text-align: center;
-  padding: 20px;
-  background: #112240;
-}
-
-.social-links a {
-  color: white;
-  font-size: 20px;
-  margin: 0 10px;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .nav ul {
-    flex-direction: column;
-    padding: 0;
-    display: none;
-  }
-
-  .nav.show ul {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .project-grid {
-    grid-template-columns: 1fr;
-  }
 }

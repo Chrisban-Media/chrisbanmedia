@@ -3,8 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CHRISBAN | Projects</title>
+    <title>Chrisban-Media</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="project.css" />
+
     <script defer src="script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,32 +15,43 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
+
+    <!-- here is the icons link -->
+    <!-- here is the icons link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <!-- this is the header -->
-    <!-- this is the header -->
-    <header class="header">
+    <header>
       <div class="container">
-        <h1 class="logo">CHRISBAN Portfolio</h1>
-        <img
-          class="logos"
-          src="images/logo.png"
-          alt="logo"
-          width="50"
-          height="50"
-        />
-        <!-- this is the navigation -->
-        <!-- this is the navigation -->
-        <nav class="nav">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#about">About </a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
+        <h1 class="brand-name">
+          <strong class="chris">CHRIS</strong
+          ><strong class="ban">BAN</strong> MEDIA
+        </h1>
+
+        <div class="brand-logo-box">
+          <img
+            class="brand-logo"
+            src="images/logo.png"
+            alt="logo"
+            width="50"
+            height="50"
+          />
+        </div>
+
+        <!-- Ham menu -->
+        <div id="hamburger">
+          <i onclick="toggleMenu()" class="ri-menu-3-line"></i>
+        </div>
+
+        <nav id="menu">
+          <a href="index.html">Home</a>
+          <a href="contact.html">Contact</a>
         </nav>
       </div>
     </header>
-
     <!-- here are the picture show casing my projects -->
     <!-- here are the picture show casing my projects -->
 
@@ -140,11 +154,14 @@
     <!-- here is the footer -->
     <!-- here is the footer -->
     <footer class="footer">
-      <p>Connect with me</p>
+      <p>&copy; Copyright &nbsp;&nbsp; Connect with me</p>
       <div class="social-links">
-        <a href="#"><i class="fab fa-github"></i></a>
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fas fa-envelope"></i></a>
+        <a href="#"><i class="ri-facebook-fill"></i></a>
+        <a href="https://wa.me/2348145626046 "
+          ><i class="ri-whatsapp-fill"></i
+        ></a>
+        <a href="#"><i class="ri-github-fill"></i></a>
+        <a href="#"><i class="ri-instagram-fill"></i></a>
       </div>
     </footer>
   </body>

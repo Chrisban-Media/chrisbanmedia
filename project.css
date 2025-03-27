@@ -85,7 +85,7 @@ body {
   }
 
   .welcome-message {
-    margin-top: 8px;
+    margin-top: 20px;
     font-size: 4vw;
     margin-left: -5%;
     margin-right: 3%;
@@ -97,7 +97,7 @@ body {
   .welcome-message {
     font-size: 15px;
     animation: bounceFromTop 5s ease-out forwards;
-    margin-top: 5px;
+    margin-top: 10px;
   }
 
   #pro-one .project-grid {

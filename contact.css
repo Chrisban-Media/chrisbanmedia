@@ -103,7 +103,7 @@ nav a:hover {
 /* this is turning chrisban in to different colors */
 .name {
   font-size: 2rem;
-  color: #64ffda;
+  color: white;
 }
 
 /* this is the paragraph about myself */
@@ -148,6 +148,10 @@ nav a:hover {
   font-size: 18px;
 }
 
+#whatsappForm fieldset {
+  border-radius: 10px;
+}
+
 .contact form {
   max-width: 500px;
   margin: 0 auto;
@@ -167,18 +171,23 @@ nav a:hover {
   color: #0a192f;
   padding: 10px 20px;
   border: none;
-  border-radius: 5px;
+  border-radius: 50px;
   cursor: pointer;
 }
 
 .tel {
   text-decoration: none;
-  background-color: #64ffda;
-  border-radius: 3%;
-  color: #0a192f;
-  padding: 1%;
+  background-color: #000593c0;
+  border-radius: 50px;
+  color: white;
+  padding: 2% 5%;
   height: fit-content;
   width: fit-content;
+}
+
+.tel:hover {
+  background-color: rgba(0, 0, 255, 0.441);
+  cursor: pointer;
 }
 
 .footer {
@@ -188,8 +197,44 @@ nav a:hover {
 }
 
 .social-links a {
-  color: white;
+  text-decoration: none;
+  color: rgb(0, 0, 255);
   font-size: 20px;
   text-decoration: none;
   margin: 0 10px;
+}
+
+@media screen and (min-width: 600px) {
+  .tel {
+    padding: 1% 2%;
+  }
+  #whatsappForm fieldset input {
+    border-radius: 8px;
+    width: 700px;
+    height: 30px;
+  }
+  #whatsappForm fieldset textarea {
+    border-radius: 8px;
+    width: 700px;
+    height: 150px;
+  }
+
+  .btn {
+    gap: 2rem;
+    width: 200px;
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #whatsappForm fieldset input {
+    border-radius: 8px;
+    width: 300px;
+    height: 30px;
+  }
+  #whatsappForm fieldset textarea {
+    border-radius: 8px;
+    width: 300px;
+    height: 110px;
+  }
 }

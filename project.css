@@ -8,21 +8,206 @@ body {
   color: white;
 }
 
+#pro-one {
+  margin-top: 20%;
+}
+
+.welcome {
+  top: -20%;
+  align-items: flex-start;
+  /* margin-top: 5%; */
+  /* font-size: 36px; */
+  font-weight: bold;
+  font-size: 30px;
+  position: absolute;
+  overflow: hidden;
+  position: relative;
+  /* bottom: -100px; */
+  animation: bounceToTop 3s ease-out forwards;
+}
+
+@keyframes bounceToTop {
+  0% {
+    bottom: -100px;
+    opacity: 0;
+  }
+
+  60% {
+    bottom: 20px;
+    opacity: 1;
+  }
+
+  /* 80% {
+    bottom: 1px;
+  } */
+
+  100% {
+    bottom: 200px;
+  }
+}
+
+/* welcome message */
+.welcome-message {
+  font-size: 20px;
+  display: flex;
+  margin-left: 12%;
+  margin-top: -100;
+  margin-bottom: 12%;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  /* bottom: 100%; */
+  /* top: -50; */
+  animation: bounceFromTop 5s ease-out forwards;
+}
+
+@keyframes bounceFromTop {
+  0% {
+    top: -100px;
+    opacity: 0;
+  }
+  60% {
+    top: 2%;
+    opacity: 1;
+  }
+  80% {
+    top: 50%;
+  }
+  100% {
+    top: 40%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .welcome {
+    margin-top: 55%;
+    padding-bottom: 10%;
+  }
+
+  .welcome-message {
+    font-size: 4vw;
+    margin-left: -5%;
+    margin-right: 3%;
+    /* margin-top: -20%;
+    margin-bottom: -50%; */
+  }
+}
+@media screen and (max-width: 1024px) {
+  .welcome-message {
+    font-size: 15px;
+    animation: bounceFromTop 5s ease-out forwards;
+    margin-top: 1px;
+  }
+
+  #pro-one .project-grid {
+    margin-top: -40%;
+  }
+
+  @keyframes bounceFromTop {
+    0% {
+      top: -20px;
+      opacity: 0;
+    }
+    60% {
+      top: 40%;
+      opacity: 1;
+    }
+    80% {
+      top: 48%;
+    }
+    100% {
+      top: 25%;
+    }
+  }
+}
+
 /* this is the section of my portfolio carriers */
 /* this is the section of my portfolio carriers */
 .projects {
-  margin-top: 20%;
+  margin-top: 5%;
   text-align: center;
 }
 
+#pro-two,
+#pro-three,
+#pro-four {
+  margin-top: -12%;
+}
+
+@media screen and (max-width: 480px) {
+  #pro-two,
+  #pro-three,
+  #pro-four {
+    margin-top: 0;
+  }
+}
+
 /* this is div carring everything in my section */
+
 /* this is div carring everything in my section */
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-  padding: 20px;
+  gap: 6rem;
+  scale: 0.9;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: auto;
 }
+
+.project-card {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0px 5px rgb(0, 4, 38);
+}
+
+.project-img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+.project-card:hover .project-img {
+  transform: scale(1.1);
+}
+.project-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #01090fa3;
+  color: white;
+  padding: 20px;
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-overlay p {
+  font-size: 20x;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-right: 13%;
+}
+
+.project-card:hover .project-overlay {
+  transform: translateY(0);
+}
+
+/* .project-link {
+  display: inline-block;
+  justify-content: center;
+
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+} */
 
 /* this is the div that carries each set in the section */
 /* this is the div that carries each set in the section */

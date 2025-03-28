@@ -16,6 +16,7 @@
 
 .bounce {
   width: 300px;
+  margin-bottom: 13%;
   animation: bounceIn 3s ease-out;
 }
 
@@ -39,7 +40,7 @@
 
 /* ======== button ======= */
 #btns {
-  margin-top: -7%;
+  margin-top: -15%;
   position: relative;
   height: 5vh;
   display: flex;

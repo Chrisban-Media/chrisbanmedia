@@ -162,6 +162,14 @@ nav .btn a:hover {
   );
 }
 
+/* my web language pictures */
+#last-lang {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
 .projects,
 .about,
 .contact {

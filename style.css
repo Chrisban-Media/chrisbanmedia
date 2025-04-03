@@ -8,7 +8,7 @@ body {
   color: white;
 }
 
-/* =========== here is the header ======== */
+/* HEADER */
 header {
   background: #112240;
   padding: 10px 0;
@@ -19,7 +19,7 @@ header {
   z-index: 1000;
 }
 
-/*===========  here is the div container in my header ========== */
+/*THE HEADER CONTAINER */
 .container {
   display: flex;
   justify-content: space-between;
@@ -28,7 +28,7 @@ header {
   overflow: hidden;
 }
 
-/* =============== here is the written logo ============ */
+/* THE BRAND NAME LOGO */
 .brand-name {
   font-size: 24px;
   font-weight: 600;
@@ -49,7 +49,7 @@ nav.active {
   right: 0;
   width: 50%;
   background-color: #0a192fc9;
-  border-radius: 1rem;
+  border-radius: 4px;
 }
 
 nav a {
@@ -57,24 +57,21 @@ nav a {
   text-decoration: none;
   background: linear-gradient(
     to right,
-    rgba(0, 0, 225, 0.897),
-    rgba(228, 0, 0, 0.9)
+    rgba(0, 0, 152, 0.897),
+    rgba(0, 56, 130, 0.9)
   );
-  padding: 2% 5%;
-  border-radius: 50px;
-  outline: linear-gradient(to right, rgb(31, 31, 31), rgb(88, 88, 88)) 5px solid;
+  padding: 4% 10%;
+  border-radius: 8px;
 }
 
-nav .btn a:hover {
+nav a:hover {
   transform: scale(1.5rem);
   color: #0a192f;
-  background: rgb(202, 0, 0);
+  background: rgb(0, 162, 202);
   cursor: pointer;
-  /* transition: all; */
-  transform: scale(0.02);
 }
 
-/* =========== tablet and desktops screens ========= */
+/* THE TABLETS AND DESKTOP SCREEN */
 @media screen and (min-width: 600px) {
   .brand-name {
     display: block;
@@ -84,7 +81,7 @@ nav .btn a:hover {
     display: none;
   }
 
-  /* this is the navigation */
+  /* THE NAVIGATION BAR */
   nav {
     display: flex;
     gap: 20px;
@@ -92,18 +89,14 @@ nav .btn a:hover {
   }
 }
 
-/* ============ THE HEADER STOPPED HERE =========== */
-
-/* here is the section containing my About me */
-/* here is the section containing my About me */
+/* THE ABOUT ME SECTION */
 .hero {
   text-align: center;
   padding: 100px 20px;
   margin-top: 60px;
 }
 
-/* here is my profiles picture */
-/* here is my profiles picture */
+/* THE PORTFOLIO PICTURE */
 .profile-pic {
   margin-top: 10%;
   width: 250px;
@@ -112,7 +105,7 @@ nav .btn a:hover {
   margin-bottom: 20px;
 }
 
-/* this is turning chrisban in to different colors */
+/* THE COLOR CHANGES IN CHRISBAN */
 .name {
   font-size: 2rem;
 }
@@ -125,21 +118,20 @@ nav .btn a:hover {
   color: blue;
 }
 
-/* this is the paragraph about myself */
-/* this is the paragraph about myself */
+/* THE ABOUT ME PARAGRAPH */
 .aboutme {
   text-align: justify;
   margin-left: 5%;
   margin-right: 5%;
 }
 
-/* here are the btns leading to the "View port, About and Contact" page */
+/* THE MAIN PAGE BUTTONS */
 .btn {
   display: inline-block;
   background: linear-gradient(
     to right,
-    rgba(0, 0, 225, 0.897),
-    rgba(228, 0, 0, 0.9)
+    rgba(0, 0, 152, 0.897),
+    rgba(0, 56, 130, 0.9)
   );
   color: #ffffff;
   padding: 10px 20px;
@@ -157,8 +149,8 @@ nav .btn a:hover {
   color: white;
   background: linear-gradient(
     to right,
-    rgba(139, 0, 0, 0.874),
-    rgba(0, 0, 132, 0.831)
+    rgba(0, 1, 77, 0.874),
+    rgba(0, 0, 255, 0.831)
   );
 }
 

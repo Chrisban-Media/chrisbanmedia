@@ -26,6 +26,10 @@ body {
   animation: bounceToTop 3s ease-out forwards;
 }
 
+.second-section {
+  padding-top: -100%;
+}
+
 @keyframes bounceToTop {
   0% {
     bottom: -100px;
